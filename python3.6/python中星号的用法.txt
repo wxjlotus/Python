@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May 31 22:49:06 2017
+
+@author: Thinkpad
+"""
+
+python中* 和**号的用法
+在函数中接收元组和列表 当要使函数接收元组或字典形式的参数的时候，有一种特殊的方法，它分别使用*和**前缀。这种 方法在函数需要获取可变数量的参数的时候特别有用。
+实例（1）
+>>> def paranum(num,*args):
+...     total=0
+...     for i in args:
+...             total+=pow(i,num)
+...     return total
+...
+>>> paranum(2,3,4)
+25
+>>> paranum(2,10)
+100
+由于在args变量前有*前缀，所有多余的函数参数都会作为一个元组存储在args中。如果使用的是 **前缀，多余的参数则会被认为是一个字典的键/值对。
+实例（2）
+>>> def fun(p,**args):
+...     print args
+...
+>>> fun(1,a=2,c=3,b=4,d=5)
+{'a': 2, 'c': 3, 'b': 4, 'd': 5}
+实例（3）
+>>> def args(arg,*args,**argss):
+...     print arg
+...     print args
+...     print argss
+...
+>>> if __name__=='__main__':
+...     args(2,3,4,5,a=5,b=6,c=7,d=8)
+...
+2
+(3, 4, 5)
+{'a': 5, 'c': 7, 'b': 6, 'd': 8}

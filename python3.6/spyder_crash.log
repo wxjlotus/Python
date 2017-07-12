@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "C:\Anaconda3\lib\site-packages\spyder\app\mainwindow.py", line 2989, in main
+    mainwindow = run_spyder(app, options, args)
+  File "C:\Anaconda3\lib\site-packages\spyder\app\mainwindow.py", line 2893, in run_spyder
+    main.setup()
+  File "C:\Anaconda3\lib\site-packages\spyder\app\mainwindow.py", line 859, in setup
+    from spyder.plugins.externalconsole import ExternalConsole
+  File "C:\Anaconda3\lib\site-packages\spyder\plugins\externalconsole.py", line 39, in <module>
+    from spyder.widgets.externalshell.pythonshell import ExternalPythonShell
+  File "C:\Anaconda3\lib\site-packages\spyder\widgets\externalshell\pythonshell.py", line 34, in <module>
+    from spyder.widgets.variableexplorer.namespacebrowser import NamespaceBrowser
+  File "C:\Anaconda3\lib\site-packages\spyder\widgets\variableexplorer\namespacebrowser.py", line 26, in <module>
+    import ipykernel.pickleutil
+  File "C:\Anaconda3\lib\site-packages\ipykernel\__init__.py", line 2, in <module>
+    from .connect import *
+  File "C:\Anaconda3\lib\site-packages\ipykernel\connect.py", line 13, in <module>
+    from IPython.core.profiledir import ProfileDir
+  File "C:\Anaconda3\lib\site-packages\IPython\__init__.py", line 49, in <module>
+    from .terminal.embed import embed
+  File "C:\Anaconda3\lib\site-packages\IPython\terminal\embed.py", line 16, in <module>
+    from IPython.core.interactiveshell import DummyMod, InteractiveShell
+  File "C:\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line 52, in <module>
+    from IPython.core.history import HistoryManager
+  File "C:\Anaconda3\lib\site-packages\IPython\core\history.py", line 13, in <module>
+    import sqlite3
+  File "E:\Python\python3.6\sqlite3.py", line 9, in <module>
+    conn = sqlite3.connect('test.db')
+AttributeError: module 'sqlite3' has no attribute 'connect'
