@@ -27,3 +27,7 @@ https://lilongsy.blog.csdn.net/article/details/127045105?spm=1001.2101.3001.6650
 
 
 Flume和Sqoop是Hadoop数据集成和收集系统，两者的定位不一样。Flume有集群的概念，是一种分布式，可靠且可用的服务，主要用于高效地收集，汇总和移动大量日志数据。而我们的Sqoop是一种用于在Apache Hadoop和结构化数据存储（如关系数据库）之间高效传输批量数据的工具（没有集群的概念）。Sqoop有助于在hadoop和其他数据库之间移动数据，并且可以并行传输数据以提高性能。两者可以做同样的工作，但是各自擅长的领域不同，因此应用场景也不同。
+
+
+Flink实时数仓--数据采集层
+https://blog.51cto.com/u_15194081/3089582?articleABtest=0
